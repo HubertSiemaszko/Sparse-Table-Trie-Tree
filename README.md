@@ -4,7 +4,7 @@ This Uni project from DSA class implements a specialized **Trie (Prefix Tree)** 
 
 
 
-## 📖 Overview
+## Overview
 
 In this implementation, the Trie is defined by two structural parameters:
 * **n**: The number of child nodes linked to the **root**.
@@ -12,7 +12,7 @@ In this implementation, the Trie is defined by two structural parameters:
 
 Every node in the tree stores at most one key. This structure is specifically optimized for cases where keys are spread out (sparse) across a large range.
 
-## ⚙️ How It Works
+## How It Works
 
 ### Insertion & Search
 The path for a key $x$ is determined using modulo operations:
@@ -26,7 +26,7 @@ Deleting a key from an internal node requires restructuring to keep the tree val
 * It searches for a **leaf node candidate** $q$ (a node with no children) using a **"search always to the left"** strategy.
 * The value from candidate $q$ is moved to node $p$, and node $q$ is then safely removed.
 
-## 🛠 Command Interface
+## Command Interface
 
 The program reads commands from standard input (`stdin`). The first few lines of input define the number of commands and the tree parameters ($n, k$).
 
